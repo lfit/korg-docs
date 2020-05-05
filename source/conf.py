@@ -53,3 +53,5 @@ html_theme = 'sphinx_rtd_theme'
 
 # Don't highlight by default
 highlight_language = 'none'
+
+master_doc = 'index'
