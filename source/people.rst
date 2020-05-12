@@ -28,8 +28,9 @@ are a few pointers to get you started:
   drafts" in the menu), and then on "move into yourblogname" next to the
   post that you want to make public.
 - If you want to follow people.kernel.org in your RSS reader, the feed
-  it at https://people.kernel.org/read/feed/ (the last / is important).
-  For just your own blog's RSS feed, s/read/yourblogname/.
+  is at https://people.kernel.org/read/feed/ (the last / is important).
+  For just your own blog's RSS feed, the URL is
+  https://people.kernel.org/[yourusername]/feed/.
 
 Code snippets
 ~~~~~~~~~~~~~
@@ -44,3 +45,27 @@ the opening stanza. E.g.::
        printf("Hello, World!");
     }
     ```
+
+Command-line tool
+~~~~~~~~~~~~~~~~~
+You can use a command-line ``wf`` tool to write and edit your posts:
+
+- Download_
+- `User Guide`_
+
+If you're only familiar with GitHub's Markdown flavor, you should be
+aware of the following differences between GitHub and WriteFreely:
+
+- WriteFreely preserves all linebreaks, as opposed to just double breaks
+  between paragraphs
+- Posts submitted via ``wf`` will use monospace font, unless you pass
+  ``--font serif`` as a flag
+
+Please see this post for other ``wf`` usage tips:
+
+- `This instance is now editable via the CLI`_
+
+.. _Download: https://github.com/writeas/writeas-cli/tree/master/cmd/wf
+.. _`User Guide`: https://github.com/writeas/writeas-cli/blob/master/cmd/wf/GUIDE.md
+.. _`This instance is now editable via the CLI`: https://people.kernel.org/monsieuricon/this-instance-now-editable-via-the-cli
+
