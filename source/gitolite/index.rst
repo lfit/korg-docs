@@ -100,6 +100,18 @@ for more details.
 Allows you to set up your 2-factor authentication token. See
 :doc:`2fa` for more details.
 
+symbolic-ref
+~~~~~~~~~~~~
+Allows you to repoint HEAD to other branches instead of the default.
+E.g.::
+
+  ssh git@gitolite.kernel.org symbolic-ref \
+    pub/scm/your/repo HEAD refs/heads/dev
+
+.. note:: The command is fully compatible with other ``git-symbolic-ref``
+   operations, but only changes to ``HEAD`` will be propagated to the
+   public mirrors.
+
 track
 ~~~~~
 Allows you to set up a remote to another repository hosted at
