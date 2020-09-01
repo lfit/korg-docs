@@ -40,6 +40,7 @@ Other services
    patchwork/index
    patchwork/pwbot
    prtracker
+   pgpkeys
    ksmap
 
 Social accounts
